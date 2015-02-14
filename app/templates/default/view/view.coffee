@@ -12,12 +12,12 @@ React = require 'react'
 
     render: ->
         div null,
-            div null, "<%= moduleName %>"
+            div null, "<%= moduleName %> was successfully mounted"
             div null, "You clicked #{@props.clicksCount} times"
             button
                 onClick: @incrementClickCount
                 "Click"
 
 
-module.exports = HelloView
+module.exports = <%= moduleName %>View
 

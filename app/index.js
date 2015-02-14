@@ -15,13 +15,15 @@ module.exports = generator.Base.extend({
 
     writing: function() {
         this.fs.copyTpl(
-            this.templatePath('default/**/*.coffee'),
+            this.templatePath('default/**/*.*'),
             this.destinationPath(this.moduleName),
             {moduleName: this.moduleName}
         );
     },
 
     done: function() {
-        this.log.ok("Initial structure for module " + this.moduleName + " is ready.");
+        this.log.ok(
+            "Initial structure for module " + this.moduleName + " is ready.");
+        this.log.writeln("Don't forget to add " + this.moduleName + " to the recipe file !!!");
     }
 });

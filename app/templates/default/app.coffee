@@ -1,8 +1,8 @@
 Rx = require 'rx'
 React = require 'react'
-<%= moduleName %>View = React.createFactory(require './view/view')
-<%= moduleName %>Storage = require './storage'
-dispatchActions = require './dispatcher'
+<%= moduleName %>View = React.createFactory(require '<%= moduleName %>/view/view')
+<%= moduleName %>Storage = require '<%= moduleName %>/storage'
+dispatchActions = require '<%= moduleName %>/dispatcher'
 
 
 initApp = (mountNode) ->

@@ -1,6 +1,6 @@
 {
-  "name": "generator-rxreact",
-  "version": "1.0.3",
+  "name": "generator-rxreact-module",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
